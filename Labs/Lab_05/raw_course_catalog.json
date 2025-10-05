@@ -1,0 +1,46 @@
+[
+    {
+        "course_id": "DS2002",
+        "section": "001",
+        "title": "Data Science Systems",
+        "level": 200,
+        "instructors": [
+            {
+                "name": "Austin Rivera",
+                "role": "Primary"
+            },
+            {
+                "name": "Heywood Williams-Tracy",
+                "role": "TA"
+            }
+        ]
+    },
+    {
+        "course_id": "ECON4190",
+        "section": "001",
+        "title": "Industrial Organization",
+        "level": 400,
+        "instructors": [
+            {
+                "name": "Federico Ciliberto",
+                "role": "Primary"
+            },
+            {
+                "name": "Braden Wagner",
+                "role": "TA"
+            }
+        ]
+    },
+    {
+        "course_id": "DS3001",
+        "section": "002",
+        "title": "Foundations of Machine Learning",
+        "level": 200,
+        "instructors": [
+            {
+                "name": "Michael Freenor",
+                "role": "Primary"
+            }
+        ]
+    }
+]
