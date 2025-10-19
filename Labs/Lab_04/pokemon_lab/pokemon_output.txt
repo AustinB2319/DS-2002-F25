@@ -1,0 +1,56 @@
+--- Running Test Pipeline (Built-in Test Modes) ---
+# 1. Run the update script (triggers test() function by default)
+Starting update_portfolio.py in TEST MODE…
+Portfolio written to: test_card_portfolio.csv
+# 2. Run the summary script (triggers test() function by default)
+=========== Portfolio Summary ===========
+Total Portfolio Value: $326.55
+-----------------------------------------
+Most Valuable Card:
+  Name : Charizard
+  ID   : base0-4
+  Value: $250.75
+=========================================
+Test complete.
+--- Adding New Card Set ---
+Enter the TCG Card Set ID (e.g., base1, base4): Fetching card data for set ID: base1...
+Data saved to card_set_lookup/base1.json
+--- Adding New Card Set ---
+Enter the TCG Card Set ID (e.g., base1, base4): Fetching card data for set ID: base4...
+Data saved to card_set_lookup/base4.json
+--- Starting Portfolio Build Workflow ---
+Do you want to add a NEW card set? (yes/no)
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Adding New Card Set ---
+Enter the TCG Card Set ID (e.g., base1, base4): Fetching card data for set ID: base1...
+Data saved to card_set_lookup/base1.json
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+Card set added. Add another? (yes/no)
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Adding New Card Set ---
+Enter the TCG Card Set ID (e.g., base1, base4): Fetching card data for set ID: base4...
+Data saved to card_set_lookup/base4.json
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+Do you want to refresh ALL existing card sets? (yes/no)
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Refreshing All Card Sets ---
+Refreshing all card sets in card_set_lookup/...
+Updating data for set: base1...
+Data written to card_set_lookup/base1.json
+Updating data for set: base4...
+Data written to card_set_lookup/base4.json
+All card sets have been refreshed!
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+Starting production pipeline…
+[1/2] Updating portfolio (ETL)…
+[2/2] Generating summary (Reporting)…
+Pipeline complete ✅
+Portfolio written to: card_portfolio.csv
+=========== Portfolio Summary ===========
+Total Portfolio Value: $5,679.13
+-----------------------------------------
+Most Valuable Card:
+  Name : Charizard
+  ID   : base1-4
+  Value: $458.29
+=========================================
